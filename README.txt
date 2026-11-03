@@ -2,10 +2,6 @@ Authors:
 Juan Antonio Fuentes (Owner - Main Developer)
 Lauren VanVleet (Owner - Main Developer)
 Rafal Zukowski (Committer - Main Developer)
-Amy Klouse (UI Tester - Non-committing role)
-Anthony Borrow, S.J. (Committer - Moodle Integration Specialist)
-Gabriel Fuentes (UI Tester - Possibly committing role in the future)
-Kevin Karam (Content Contributor - Musical concepts)
 Corby Schmitz (Tester - Have fun hacking)
 
 Eclipse Instructions:
@@ -29,4 +25,4 @@ Let me know if you have any questions, I'm still working on getting used to this
 
 -JAF
 
-Restarted Project (2/15/2013).
+Restarted Project (2/15/2026) using help from Gemini 3.8 Flash and Google Antigravity.
