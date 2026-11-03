@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme Modern Color System -->
+    <color name="primary">#818CF8</color>
+    <color name="primary_variant">#6366F1</color>
+    <color name="on_primary">#0F172A</color>
+    <color name="secondary">#38BDF8</color>
+    <color name="secondary_variant">#0284C7</color>
+    <color name="on_secondary">#0F172A</color>
+
+    <!-- Deep Slate Dark Surfaces -->
+    <color name="background">#0F172A</color>
+    <color name="surface">#1E293B</color>
+    <color name="surface_card">#1E293B</color>
+    <color name="surface_card_alt">#334155</color>
+    <color name="on_surface">#F8FAFC</color>
+    <color name="on_surface_variant">#CBD5E1</color>
+    <color name="divider">#334155</color>
+
+    <!-- Vibrant Accents against Dark Backgrounds -->
+    <color name="card_learn">#A5B4FC</color>
+    <color name="card_learn_bg">#1E1E38</color>
+    <color name="card_learn_btn">#6366F1</color>
+
+    <color name="card_quiz">#FDA4AF</color>
+    <color name="card_quiz_bg">#361822</color>
+    <color name="card_quiz_btn">#E11D48</color>
+
+    <color name="card_resources">#6EE7B7</color>
+    <color name="card_resources_bg">#0F2E22</color>
+    <color name="card_resources_btn">#059669</color>
+
+    <color name="card_contact">#FCD34D</color>
+    <color name="card_contact_bg">#362810</color>
+    <color name="card_contact_btn">#D97706</color>
+</resources>

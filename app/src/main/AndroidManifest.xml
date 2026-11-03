@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        
+        <activity 
+            android:name="edu.luc.mb.Splash" 
+            android:exported="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>   
+
+        <activity android:name="edu.luc.mb.MainActivity" android:exported="false" android:label="@string/app_name" android:theme="@style/AppTheme" />
+        <activity android:name="edu.luc.mb.Quizzes" android:exported="false" android:label="@string/test_button" android:theme="@style/AppTheme" />
+        <activity android:name="edu.luc.mb.Learn" android:exported="false" android:label="@string/learn" android:theme="@style/AppTheme" />
+        <activity android:name="edu.luc.mb.Resources" android:exported="false" android:label="@string/resources" android:theme="@style/AppTheme" />
+        <activity android:name="edu.luc.mb.ContactUs" android:exported="false" android:label="@string/Contact" android:theme="@style/AppTheme" />
+        <activity android:name="edu.luc.mb.ListViewLearnActivity" android:exported="false" android:label="@string/go_button" android:theme="@style/AppTheme" />
+        <activity android:name="edu.luc.mb.HorizontalListViewDemo" android:exported="false" android:label="@string/treb_button" android:theme="@style/AppTheme" />
+        <activity android:name="edu.luc.mb.QuestionActivity" android:exported="false" android:label="@string/treb_button" android:theme="@style/AppTheme" />
+        <activity android:name="edu.luc.mb.QuizFunActivity" android:exported="false" android:label="@string/treb_button" android:theme="@style/AppTheme" />
+        
+        <service android:name="edu.luc.mb.MusicService" android:exported="false" />`n    </application>
+</manifest>

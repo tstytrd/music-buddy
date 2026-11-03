@@ -1,0 +1,364 @@
+{
+  "Questions": [
+    {
+      "Question": "How many beats does a whole note get?",
+      "CorrectAnswer": 2,
+      "Answers": [
+        {
+          "Answer": "2"
+        },
+        {
+          "Answer": "1"
+        },
+        {
+          "Answer": "4"
+        },
+        {
+          "Answer": "1/2"
+        }
+      ]
+    },
+    {
+      "Question": "Choose the correct order from softest to loudest",
+      "CorrectAnswer": 3,
+      "Answers": [
+        {
+          "Answer": "pp f mf mp"
+        },
+        {
+          "Answer": "ff mf mp pp"
+        },
+        {
+          "Answer": "p f mp mf"
+        },
+        {
+          "Answer": "pp mp mf ff"
+        }
+      ]
+    },
+	{
+      "Question": "Crescendo means gradually get louder",
+      "CorrectAnswer": 0,
+      "Answers": [
+        {
+          "Answer": "True"
+        },
+        {
+          "Answer": "False"
+        },
+        {
+          "Answer": "X"
+        },
+        {
+          "Answer": "X"
+        }
+      ]
+    },
+	{
+      "Question": "Which Clefs make up the Grand Staff?",
+      "CorrectAnswer": 0,
+      "Answers": [
+        {
+          "Answer": "Treble & Bass"
+        },
+        {
+          "Answer": "Alto & Bass"
+        },
+        {
+          "Answer": "Tenor & Alto"
+        },
+        {
+          "Answer": "Treble & Alto"
+        }
+      ]
+    },
+	{
+      "Question": "How many beats does a half note get?",
+      "CorrectAnswer": 2,
+      "Answers": [
+        {
+          "Answer": "4"
+        },
+        {
+          "Answer": "1/2"
+        },
+        {
+          "Answer": "2"
+        },
+        {
+          "Answer": "1"
+        }
+      ]
+    },
+	{
+      "Question": "What are the spaces in Treble Clef?",
+      "CorrectAnswer": 3,
+      "Answers": [
+        {
+          "Answer": "GBDFA"
+        },
+        {
+          "Answer": "ACEG"
+        },
+        {
+          "Answer": "EGBDF"
+        },
+        {
+          "Answer": "FACE"
+        }
+      ]
+    },
+	{
+      "Question": "How many beats does an eighth note get?",
+      "CorrectAnswer": 0,
+      "Answers": [
+        {
+          "Answer": "1/2"
+        },
+        {
+          "Answer": "1"
+        },
+        {
+          "Answer": "8"
+        },
+        {
+          "Answer": "2"
+        }
+      ]
+    },
+		{
+      "Question": "Choose the correct order from shortest to longest",
+      "CorrectAnswer": 3,
+      "Answers": [
+        {
+          "Answer": "whole note, half note, quarter note, eighth note"
+        },
+        {
+          "Answer": "eighth note, half note, quarter note, whole note"
+        },
+        {
+          "Answer": "quarter note, whole note, eighth note, half note"
+        },
+        {
+          "Answer": "eighth note, quarter note, half note, whole note"
+        }
+      ]
+    },
+	{
+      "Question": "Which of the following gets 1/4 of the beat?",
+      "CorrectAnswer": 2,
+      "Answers": [
+        {
+          "Answer": "quarter note"
+        },
+        {
+          "Answer": "eighth note"
+        },
+        {
+          "Answer": "sixteenth note"
+        },
+        {
+          "Answer": "half note"
+        }
+      ]
+    },
+	{
+      "Question": "What are the lines of the Bass Clef?",
+      "CorrectAnswer": 1,
+      "Answers": [
+        {
+          "Answer": "FACE"
+        },
+        {
+          "Answer": "GBDFA"
+        },
+        {
+          "Answer": "ACEG"
+        },
+        {
+          "Answer": "EGBDF"
+        }
+      ]
+    },
+	{
+      "Question": "Diminuendo means",
+      "CorrectAnswer": 0,
+      "Answers": [
+        {
+          "Answer": "gradually get softer"
+        },
+        {
+          "Answer": "suddenly get louder"
+        },
+        {
+          "Answer": "gradually get louder"
+        },
+        {
+          "Answer": "suddenly get softer"
+        }
+      ]
+    },
+	{
+      "Question": "How many beats is a quarter rest?",
+      "CorrectAnswer": 3,
+      "Answers": [
+        {
+          "Answer": "6"
+        },
+        {
+          "Answer": "4"
+        },
+        {
+          "Answer": "2"
+        },
+        {
+          "Answer": "1"
+        }
+      ]
+    },
+	{
+      "Question": "What are the lines of the Treble Clef?",
+      "CorrectAnswer": 3,
+      "Answers": [
+        {
+          "Answer": "GBDFA"
+        },
+        {
+          "Answer": "FACE"
+        },
+        {
+          "Answer": "ACEG"
+        },
+        {
+          "Answer": "EGBDF"
+        }
+      ]
+    },
+	{
+      "Question": "Forte (f) means loud",
+      "CorrectAnswer": 0,
+      "Answers": [
+        {
+          "Answer": "TRUE"
+        },
+        {
+          "Answer": "FALSE"
+        },
+        {
+          "Answer": "X"
+        },
+        {
+          "Answer": "X"
+        }
+      ]
+    },
+		{
+      "Question": "What does mezzo-forte mean?",
+      "CorrectAnswer": 2,
+      "Answers": [
+        {
+          "Answer": "Medium soft"
+        },
+        {
+          "Answer": "Loud"
+        },
+        {
+          "Answer": "Medium loud"
+        },
+        {
+          "Answer": "Very soft"
+        }
+      ]
+    },
+	{
+      "Question": "Order the following from longest to shortest",
+      "CorrectAnswer": 2,
+      "Answers": [
+        {
+          "Answer": "quarter note, sixteenth note, half note, eighth note"
+        },
+        {
+          "Answer": "sixteenth note, eighth note, quarter note, half note"
+        },
+        {
+          "Answer": "half note, quarter note, eighth note, sixteenth note"
+        },
+        {
+          "Answer": "sixteenth note, half note, quarter note, eight note"
+        }
+      ]
+    },
+	{
+      "Question": "What are the spaces of the Bass Clef?",
+      "CorrectAnswer": 0,
+      "Answers": [
+        {
+          "Answer": "ACEG"
+        },
+        {
+          "Answer": "GBDFA"
+        },
+        {
+          "Answer": "FACE"
+        },
+        {
+          "Answer": "EGBDF"
+        }
+      ]
+    },
+	{
+      "Question": "Mezzo-piano means very soft",
+      "CorrectAnswer": 1,
+      "Answers": [
+        {
+          "Answer": "TRUE"
+        },
+        {
+          "Answer": "FALSE"
+        },
+        {
+          "Answer": "X"
+        },
+        {
+          "Answer": "X"
+        }
+      ]
+    },
+		{
+      "Question": "What gets 2 beats?",
+      "CorrectAnswer": 1,
+      "Answers": [
+        {
+          "Answer": "quarter note/quarter rest"
+        },
+        {
+          "Answer": "half note/half rest"
+        },
+        {
+          "Answer": "eighth note/eighth rest"
+        },
+        {
+          "Answer": "whole note/whole rest"
+        }
+      ]
+    },
+	{
+      "Question": "The first space in Treble Clef is an E",
+      "CorrectAnswer": 0,
+      "Answers": [
+        {
+          "Answer": "TRUE"
+        },
+        {
+          "Answer": "FALSE"
+        },
+        {
+          "Answer": "X"
+        },
+        {
+          "Answer": "X"
+        }
+      ]
+    }
+  ]
+}
