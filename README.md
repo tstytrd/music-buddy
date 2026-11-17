@@ -37,8 +37,8 @@ Music Buddy is an open-source Android application designed to help beginners lea
 | Min SDK | API 21 (Android 5.0 Lollipop) |
 | Target SDK | API 34 (Android 14) |
 | Build System | Gradle 8.7 + Android Gradle Plugin 8.5 |
-| Theme | Theme.Material3.Dark.NoActionBar |
-| Audio | MediaPlayer via background Service |
+| Theme | `Theme.Material3.Dark.NoActionBar` |
+| Audio | `MediaPlayer` via background `Service` |
 
 ---
 
@@ -51,49 +51,49 @@ Music Buddy is an open-source Android application designed to help beginners lea
 
 ### Clone & Build
 
-\\\ash
+```sh
 git clone https://github.com/tstytrd/music-buddy.git
 cd music-buddy
-\\\
+```
 
 Open the project folder in **Android Studio** — it will automatically detect the Gradle build files and sync dependencies.
 
 Then run the app on a device or emulator using the **Run ▶** button, or from the terminal:
 
-\\\ash
+```sh
 ./gradlew assembleDebug
 adb install app/build/outputs/apk/debug/app-debug.apk
-\\\
+```
 
 ---
 
 ## 📁 Project Structure
 
-\\\
+```
 music-buddy/
 ├── app/
 │   └── src/main/
 │       ├── java/edu/luc/mb/
-│       │   ├── Splash.java               # Splash screen
-│       │   ├── MainActivity.java         # Main dashboard
-│       │   ├── Learn.java                # Learn hub (Treble, Bass, Dynamics, Notes)
+│       │   ├── Splash.java                 # Splash screen
+│       │   ├── MainActivity.java           # Main dashboard
+│       │   ├── Learn.java                  # Learn hub (Treble, Bass, Dynamics, Notes)
 │       │   ├── HorizontalListViewDemo.java # Visual notation browser
-│       │   ├── Quizzes.java              # Quiz selection screen
-│       │   ├── QuizFunActivity.java      # Quiz runner
-│       │   ├── QuestionActivity.java     # Individual question display
-│       │   ├── Resources.java            # Verified external resources
-│       │   ├── ContactUs.java            # About & project info
-│       │   └── MusicService.java         # Background audio service
+│       │   ├── Quizzes.java                # Quiz selection screen
+│       │   ├── QuizFunActivity.java        # Quiz runner
+│       │   ├── QuestionActivity.java       # Individual question display
+│       │   ├── Resources.java              # Verified external resources
+│       │   ├── ContactUs.java              # About & project info
+│       │   └── MusicService.java           # Background audio service
 │       ├── res/
-│       │   ├── drawable/                 # Musical notation images
-│       │   ├── layout/                   # Material 3 screen layouts
-│       │   ├── raw/                      # music_buddy_theme.mp3
-│       │   └── values/                   # Colors, Strings, Styles
+│       │   ├── drawable/                   # Musical notation images
+│       │   ├── layout/                     # Material 3 screen layouts
+│       │   ├── raw/                        # music_buddy_theme.mp3
+│       │   └── values/                     # Colors, Strings, Styles
 │       └── AndroidManifest.xml
 ├── build.gradle
 ├── settings.gradle
 └── gradle.properties
-\\\
+```
 
 ---
 
