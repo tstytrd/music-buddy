@@ -58,7 +58,7 @@ public class QuestionActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.question);
 		
-		TableLayout quizLayout = (TableLayout) findViewById(R.id.quizLayout);
+		View quizLayout = findViewById(R.id.quizLayout);
 		quizLayout.setVisibility(android.view.View.INVISIBLE);
 		
 		try {

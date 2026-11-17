@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Buddy - Interactive Music Theory Learning</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --primary: #818cf8;
+      --primary-hover: #6366f1;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-quiz: #fda4af;
+      --accent-learn: #a5b4fc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 60px 0 80px 0;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(129, 140, 248, 0.15);
+      color: var(--primary);
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      border: 1px solid rgba(129, 140, 248, 0.3);
+    }
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+    }
+    .btn-row {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #0f172a;
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      border: 1px solid var(--card-border);
+      color: var(--text);
+      background: var(--card-bg);
+    }
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin: 40px 0;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+    }
+    .card-icon {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+    .card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+    footer {
+      border-top: 1px solid var(--card-border);
+      margin-top: 60px;
+      padding-top: 30px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Open Source Android App</div>
+      <h1>🎵 Music Buddy</h1>
+      <p class="subtitle">An interactive music theory learning application designed to help beginners master clefs, notation, dynamics, and note reading.</p>
+      <div class="btn-row">
+        <a href="https://github.com/tstytrd/music-buddy" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
+        <a href="privacy-policy.html" class="btn btn-outline">Privacy Policy</a>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">🎼</div>
+        <h3>Treble &amp; Bass Clefs</h3>
+        <p>Comprehensive visual reference cards illustrating lines, spaces, and note positions across standard staves.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⏱️</div>
+        <h3>Note &amp; Rest Types</h3>
+        <p>Learn whole, half, quarter, eighth, and sixteenth notes with their corresponding rest notations and durations.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📝</div>
+        <h3>Interactive Quizzes</h3>
+        <p>Practice music theory knowledge with multi-question challenges, instant scoring, retakes, and review modes.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔊</div>
+        <h3>Theme Audio &amp; Mute</h3>
+        <p>Looping educational audio theme with intuitive on-screen mute and unmute controls.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌙</div>
+        <h3>Modern Dark Theme</h3>
+        <p>Full Material Design 3 dark interface with high-contrast elements optimized for study comfort.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>100% Privacy-First</h3>
+        <p>Completely offline functionality. No tracking, no user accounts, no analytics, and zero data collection.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Licensed under GNU General Public License v3.0 | <a href="privacy-policy.html">Privacy Policy</a> | <a href="https://github.com/tstytrd/music-buddy" target="_blank" rel="noopener">GitHub Repository</a></p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -34,7 +34,7 @@ public class QuizFunActivity extends Activity{
 			        finish();
 			        loadQuestions();
 			        Intent intent = new Intent(QuizFunActivity.this, QuestionActivity.class);
-			        QuizFunActivity.this.startActivity(intent);
+			        QuizFunActivity.this.runOnUiThread(new Runnable() { public void run() { QuizFunActivity.this.startActivity(intent); } });
 	        	} catch (Exception e) {
 	        	} 
         	}
