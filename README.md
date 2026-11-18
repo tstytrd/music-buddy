@@ -18,6 +18,7 @@ Music Buddy is an open-source Android application designed to help beginners lea
 
 - **Learn Music Fundamentals** — Treble Clef Notes, Bass Clef Notes, Dynamics, and Note & Rest Types with visual notation images
 - **Interactive Quizzes** — Music Theory quiz with multiple choice questions and scoring
+- **🎵 Name the Notes Audio Quiz** — Ear training & notation quiz that plays real musical tones (Middle C, Treble G, Bass F, A440) using pure Android audio synthesis, with interactive Treble and Bass clef identification
 - **Background Music** — App theme music plays automatically with a convenient **🔊 Mute / 🔇 Unmute** toggle on the main screen
 - **Curated Resources** — Verified active music education links (updated 2026):
   - [MusicTheory.net](https://www.musictheory.net)

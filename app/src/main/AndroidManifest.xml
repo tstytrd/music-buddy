@@ -27,5 +27,5 @@
         <activity android:name="edu.luc.mb.QuestionActivity" android:exported="false" android:label="@string/treb_button" android:theme="@style/AppTheme" />
         <activity android:name="edu.luc.mb.QuizFunActivity" android:exported="false" android:label="@string/treb_button" android:theme="@style/AppTheme" />
         
-        <service android:name="edu.luc.mb.MusicService" android:exported="false" />`n    </application>
+        <service android:name="edu.luc.mb.MusicService" android:exported="false" />`n        <activity android:name="edu.luc.mb.NameTheNotesActivity" android:exported="false" android:label="Name the Notes" android:theme="@style/AppTheme" />`n    </application>
 </manifest>

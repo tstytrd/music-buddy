@@ -1,6 +1,5 @@
 package edu.luc.mb;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -38,11 +37,8 @@ public class Quizzes extends AppCompatActivity {
             btnNotes.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                    alert.setTitle("Name the Notes");
-                    alert.setMessage("This quiz is currently in development, please come back at a later time, thank you!");
-                    alert.setPositiveButton("OK", null);
-                    alert.show();
+                    Intent intent = new Intent(Quizzes.this, NameTheNotesActivity.class);
+                    startActivity(intent);
                 }
             });
         }
