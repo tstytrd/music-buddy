@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -14,6 +13,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.button.MaterialButton;
 import luc.mb.R;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class NameTheNotesActivity extends AppCompatActivity {
 
@@ -129,67 +132,71 @@ public class NameTheNotesActivity extends AppCompatActivity {
     }
 
     private void initQuestions() {
-        questions = new NoteQuestion[] {
-            new NoteQuestion(
-                "🎼 Treble Clef",
-                "Listen to the note and identify this pitch on the Treble Clef (Middle C):",
-                R.drawable.treb_middle_c,
-                261.63, // C4
-                new String[] { "Middle C (C4)", "Treble E (First Line)", "Treble G (Second Line)", "High C (C5)" },
-                0,
-                "Middle C sits on a ledger line below the treble staff."
-            ),
-            new NoteQuestion(
-                "🎼 Treble Clef",
-                "Listen to the pitch. Which note is shown on the 2nd line of the Treble staff?",
-                R.drawable.treb_g,
-                392.00, // G4
-                new String[] { "Treble F (First Space)", "Treble G (Second Line - Treble Clef reference)", "Treble B (Third Line)", "Treble D (Fourth Line)" },
-                1,
-                "The treble clef curls around the second line, defining it as G4."
-            ),
-            new NoteQuestion(
-                "🎼 Treble Clef",
-                "Listen to this higher tone. What note is sitting in the second space?",
-                R.drawable.treb_a,
-                440.00, // A4 (Standard Concert Pitch)
-                new String[] { "E4", "F4", "A4 (Second Space - 440 Hz)", "C5" },
-                2,
-                "F-A-C-E spells the spaces in the treble clef. A sits in the 2nd space."
-            ),
-            new NoteQuestion(
-                "🎵 Bass Clef",
-                "Listen to this low pitch. Which note is shown on the 4th line of the Bass clef?",
-                R.drawable.bass_f,
-                174.61, // F3
-                new String[] { "Bass G (First Line)", "Bass D (Third Line)", "Bass F (Fourth Line - Bass Clef reference)", "Bass C (Second Space)" },
-                2,
-                "The two dots of the Bass (F) clef surround the fourth line, marking it as F."
-            ),
-            new NoteQuestion(
-                "🎵 Bass Clef",
-                "Listen to this pitch. Identify the note sitting on the first line of the Bass clef:",
-                R.drawable.bass_g,
-                98.00, // G2
-                new String[] { "Bass G (First Line)", "Bass B (Second Line)", "Bass E (Third Space)", "Bass A (Top Line)" },
-                0,
-                "Good Boys Do Fine Always: G is the first line of the bass staff."
-            ),
-            new NoteQuestion(
-                "🎼 Clef Comparison",
-                "Listen to the tone. Which note connects both clefs as the central reference?",
-                R.drawable.bass_middle_c,
-                261.63, // Middle C
-                new String[] { "Bass Low C", "Middle C (Ledger line between clefs)", "Treble High C", "Bass F" },
-                1,
-                "Middle C connects the bass and treble staves right in the center."
-            )
-        };
+        List<NoteQuestion> pool = new ArrayList<NoteQuestion>();
+        
+        pool.add(new NoteQuestion(
+            "🎼 Treble Clef",
+            "Listen to the note and identify this pitch on the Treble Clef (Middle C):",
+            R.drawable.treb_middle_c,
+            261.63, // C4
+            new String[] { "Middle C (C4)", "Treble E (First Line)", "Treble G (Second Line)", "High C (C5)" },
+            0,
+            "Middle C sits on a ledger line below the treble staff."
+        ));
+        pool.add(new NoteQuestion(
+            "🎼 Treble Clef",
+            "Listen to the pitch. Which note is shown on the 2nd line of the Treble staff?",
+            R.drawable.treb_g,
+            392.00, // G4
+            new String[] { "Treble F (First Space)", "Treble G (Second Line - Treble Clef reference)", "Treble B (Third Line)", "Treble D (Fourth Line)" },
+            1,
+            "The treble clef curls around the second line, defining it as G4."
+        ));
+        pool.add(new NoteQuestion(
+            "🎼 Treble Clef",
+            "Listen to this tone. What note is sitting in the second space?",
+            R.drawable.treb_a,
+            440.00, // A4
+            new String[] { "E4", "F4", "A4 (Second Space - 440 Hz)", "C5" },
+            2,
+            "F-A-C-E spells the spaces in the treble clef. A sits in the 2nd space."
+        ));
+        pool.add(new NoteQuestion(
+            "🎵 Bass Clef",
+            "Listen to this low pitch. Which note is shown on the 4th line of the Bass clef?",
+            R.drawable.bass_f,
+            174.61, // F3
+            new String[] { "Bass G (First Line)", "Bass D (Third Line)", "Bass F (Fourth Line - Bass Clef reference)", "Bass C (Second Space)" },
+            2,
+            "The two dots of the Bass (F) clef surround the fourth line, marking it as F."
+        ));
+        pool.add(new NoteQuestion(
+            "🎵 Bass Clef",
+            "Listen to this pitch. Identify the note sitting on the first line of the Bass clef:",
+            R.drawable.bass_g,
+            98.00, // G2
+            new String[] { "Bass G (First Line)", "Bass B (Second Line)", "Bass E (Third Space)", "Bass A (Top Line)" },
+            0,
+            "Good Boys Do Fine Always: G is the first line of the bass staff."
+        ));
+        pool.add(new NoteQuestion(
+            "🎼 Clef Comparison",
+            "Listen to the tone. Which note connects both clefs as the central reference?",
+            R.drawable.bass_middle_c,
+            261.63, // Middle C
+            new String[] { "Bass Low C", "Middle C (Ledger line between clefs)", "Treble High C", "Bass F" },
+            1,
+            "Middle C connects the bass and treble staves right in the center."
+        ));
+
+        // Randomize questions each time the quiz initiates
+        Collections.shuffle(pool);
+        questions = pool.toArray(new NoteQuestion[0]);
     }
 
     private void displayQuestion(int index) {
         NoteQuestion q = questions[index];
-        tvClefBadge.setText(q.clefTitle);
+        tvClefBadge.setText(q.clefTitle + " • Question " + (index + 1) + " of " + questions.length);
         tvQuestionPrompt.setText((index + 1) + ". " + q.prompt);
         ivNoteImage.setImageResource(q.drawableResId);
 
@@ -226,7 +233,6 @@ public class NameTheNotesActivity extends AppCompatActivity {
             btnSubmit.setVisibility(View.GONE);
         }
 
-        // Automatically play the note when displaying the question so user immediately hears it
         NoteSynthesizer.playFrequency(q.frequencyHz, 850);
     }
 
@@ -301,9 +307,9 @@ public class NameTheNotesActivity extends AppCompatActivity {
 
         for (int i = 0; i < radioOptions.length; i++) {
             if (i == correct) {
-                radioOptions[i].setTextColor(Color.parseColor("#4ADE80")); // Green for correct
+                radioOptions[i].setTextColor(Color.parseColor("#4ADE80"));
             } else if (i == userChoice) {
-                radioOptions[i].setTextColor(Color.parseColor("#F87171")); // Red for incorrect
+                radioOptions[i].setTextColor(Color.parseColor("#F87171"));
             } else {
                 radioOptions[i].setTextColor(Color.parseColor("#64748B"));
             }

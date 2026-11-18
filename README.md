@@ -2,7 +2,7 @@
 
 **Interactive Music Theory Learning App for Android**
 
-[![Latest Release](https://img.shields.io/github/v/release/tstytrd/music-buddy?style=flat-square&color=818cf8)](https://github.com/tstytrd/music-buddy/releases/latest) [![Download APK](https://img.shields.io/badge/Download-APK%20(v2.0.0)-success?style=flat-square&logo=android)](https://github.com/tstytrd/music-buddy/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/tstytrd/music-buddy?style=flat-square&color=818cf8)](https://github.com/tstytrd/music-buddy/releases/latest) [![Download APK](https://img.shields.io/badge/Download-APK%20(v2.1.0)-success?style=flat-square&logo=android)](https://github.com/tstytrd/music-buddy/releases/latest)
 
 Music Buddy is an open-source Android application designed to help beginners learn music fundamentals through interactive lessons, visual notation references, and quizzes. Originally developed at Loyola University Chicago as a COMP 412 project in 2013 and fully modernized in 2026.
 
